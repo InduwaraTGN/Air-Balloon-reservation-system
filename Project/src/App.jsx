@@ -1,20 +1,15 @@
-import "./App.css";
-import HomePage from "./views/Home page";
-import LoginPage from "./views/Login";
-import { Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
-import Payment from "./views/Payment";
+// src/App.js - CORRECTED VERSION
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'; // Remove BrowserRouter
+import HomePage from './views/HomePage';
 
 function App() {
-
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/payment" element={<Payment />} />
-      </Routes>
-    </>
+    // No Router wrapper here, just Routes directly
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      {/* Add more routes as you create more pages */}
+    </Routes>
   );
 }
 

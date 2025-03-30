@@ -115,7 +115,7 @@ const Payment = () => {
         setIsSubmitting(false);
         setIsSuccess(true);
 
-        // Reset form after success
+        // Reset form after successcd 
         setTimeout(() => {
           setIsSuccess(false);
           setFormData({
